@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Newsletter Sign-up Form</title>
+  <link rel="stylesheet" href="deisgn.css"> 
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="interface" class="interface">
+      <form id="signup" novalidate>
+        <picture>
+          <source media="(min-width: 48rem)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+          <source media="(max-width: 47.9rem)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration of a signup" class="illustration-img">
+        </picture>
+        <div class="contents">
+          <h1 class="update">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Measuring to ensure updates are a success</li>
+            <li>Product discovery and building what matters</li>
+            <li>And much more!</li>
+          </ul>
+          <div class="error">
+            <label for="email">Email address</label>
+            <span class="emessage" id="emessage"></span>
+          </div>
+          <input type="text" id="email" name="email" placeholder="email@company.com">
+          <button type="button" class="sb" id="subscribeButton">Subscribe to monthly newsletter</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+:root {
+  --Red: hsl(4, 100%, 67%);
+  --Blue-800: hsl(234, 29%, 20%);
+  --Blue-700: hsl(235, 18%, 26%);
+  --Grey: hsl(0, 0%, 58%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--Blue-700);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.nextpage {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--Blue-800);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 22rem; /* Reduced width */
+  max-width: 90%; /* Ensures responsiveness */
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nextpage h1 {
+  font-size: 2rem; /* Adjusted size */
+  font-weight: 700;
+  line-height: 2.2rem;
+  padding-top: 1.5rem;
+}
+.nextpage p {
+  font-size: 0.9rem; /* Increased readability */
+  padding-bottom: 1.5rem;
+  line-height: 1.4;
+}
+.cb {
+  width: 100%;
+  height: 2.5rem; /* Slightly smaller button */
+  background-color: var(--Blue-800);
+  color: var(--White);
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.cb:hover {
+  background-image: linear-gradient(to right, #ff4b77 30%, #f65314);
+  box-shadow: 1px 4px 12px #ff6257;
+}
